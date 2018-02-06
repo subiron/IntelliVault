@@ -80,12 +80,6 @@ public class IntelliVaultSettings implements Configurable {
                 chooser.setDialogTitle("Select Temp Directory");
                 chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
                 chooser.setAcceptAllFileFilterUsed(false);
-
-                // Demonstrate "Open" dialog:
-                int rVal = chooser.showOpenDialog(jPanel);
-                if (rVal == JFileChooser.APPROVE_OPTION) {
-                    txtTempDir.setText(chooser.getSelectedFile().getAbsolutePath());
-                }
             }
         });
 
@@ -99,12 +93,6 @@ public class IntelliVaultSettings implements Configurable {
                 chooser.setDialogTitle("Select Vault Directory");
                 chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
                 chooser.setAcceptAllFileFilterUsed(false);
-
-                // Demonstrate "Open" dialog:
-                int rVal = chooser.showOpenDialog(jPanel);
-                if (rVal == JFileChooser.APPROVE_OPTION) {
-                    txtVaultDir.setText(chooser.getSelectedFile().getAbsolutePath());
-                }
             }
         });
 
